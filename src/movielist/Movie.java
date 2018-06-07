@@ -46,5 +46,11 @@ public class Movie {
     public void setMovieRuntime(String movieRuntime){
             this.movieRuntime = movieRuntime;
     }
-        
+    
+    public void ToString(String movieName, String movieRating, String movieYear, 
+            String MovieRuntime){
+        System.out.printf("Your favourite movie is:\nName: %s\nRating: %s\nYear "
+                + "of movie created: %s\nRun time: %s mins\n", movieName, 
+                movieRating, movieYear, MovieRuntime);
+    }
 }
