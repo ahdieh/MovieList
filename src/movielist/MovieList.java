@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package movielist;
+import java.util.Scanner;
 
 /**
  *
@@ -15,7 +16,21 @@ public class MovieList {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       String movieName;
+       String movieRating;
+       String movieYear;
+       String movieRuntime;
+       
+       Scanner in = new Scanner(System.in);
+       System.out.print("Please enter your favorite movie's name, its rating, "
+               + "the year is created, its run time in minutes: ");
+       movieName = in.next();
+       movieRating = in.next();
+       movieYear = in.next();
+       movieRuntime = in.next();
+       
+       Movie movie = new Movie(movieName, movieRating, movieYear, movieRuntime);
+       movie.ToString(movieName, movieRating, movieYear, movieRuntime);
     }
     
 }
