@@ -30,7 +30,7 @@ public class MovieList {
        movieRuntime = in.next();
        
        Movie movie = new Movie(movieName, movieRating, movieYear, movieRuntime);
-       movie.ToString(movieName, movieRating, movieYear, movieRuntime);
+       movie.ToString();
     }
     
 }

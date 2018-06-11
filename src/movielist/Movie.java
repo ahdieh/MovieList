@@ -15,8 +15,8 @@ public class Movie {
     private String movieYear;
     private String movieRuntime;
 
-    public Movie (String movieName, String movieRating, String movieTear, 
-            String MovieRuntime){
+    public Movie (String movieName, String movieRating, String movieYear, 
+            String movieRuntime){
             this.movieName = movieName;
             this.movieRating = movieRating;
             this.movieYear = movieYear;
@@ -47,10 +47,9 @@ public class Movie {
             this.movieRuntime = movieRuntime;
     }
     
-    public void ToString(String movieName, String movieRating, String movieYear, 
-            String MovieRuntime){
+    public void ToString(){
         System.out.printf("Your favourite movie is:\nName: %s\nRating: %s\nYear "
                 + "of movie created: %s\nRun time: %s mins\n", movieName, 
-                movieRating, movieYear, MovieRuntime);
+                movieRating, movieYear, movieRuntime);
     }
 }
